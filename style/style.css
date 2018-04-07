@@ -35,7 +35,7 @@ header #food-corner-logo{
     flex:1 0 50%;
     margin-bottom: 6px;
 
-    font-family: 'Chicle', cursive;
+    font-family: 'Chicle', serif;
     font-weight: 100;
     font-size: 50px;
 }
@@ -103,7 +103,7 @@ ul#nav-list{
     
 }
 #banner-text h1{
-    font-family: 'Chicle', cursive;
+    font-family: 'Chicle', serif;
     font-size: 50px;
     font-weight:normal;
     margin-top: 18%;
@@ -122,7 +122,7 @@ h2.section-title{
     background-size: contain;
     background-position-y: 16px;
 
-    font-family: 'Chicle', cursive;
+    font-family: 'Chicle', serif;
     font-weight: 100;
     
     
@@ -208,7 +208,7 @@ footer{
 }
 h2#contact{
     margin-bottom: 0;
-    font-family: 'Chicle', cursive;
+    font-family: 'Chicle', serif;
     font-weight: 100;
     font-size: 26px;
     letter-spacing: 1px;
