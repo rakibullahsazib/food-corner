@@ -29,19 +29,22 @@ $(document).ready(function(){
 
     //Show more items
     var clickCounter = 0;
+
+
     $("#build-more-down-btn").click(function(){
-
-        var low= (6 + clickCounter*4);
-
+        // At each click we will show 4 more items
+        var low= (3+clickCounter*4);
+        //lt(8):gt(3) means 4,5,6,7
+        var id = "#build-menu-items .build-menu-item:lt("+String(low+5)+"):gt("+String(low)+")";
         
-        var id = "#build-menu-items div:gt("+String(low)+"):lt("+String(low+3)+")";
-        
-        console.log(id);
+        //console.log(id);
         
         $(id).slideDown();
         $("#build-less-up-btn").show();
         
         clickCounter++ ;
+
+        //After 3 counts 3*4=12 items will be shown, we have 10 items. Therefore we don't need show-more button anymore.
         if(clickCounter>=3){
             $("#build-more-down-btn").hide();
         }
@@ -49,7 +52,7 @@ $(document).ready(function(){
 
     //Show less items
     $("#build-less-up-btn").click(function(){
-        $("#build-menu-items div:gt(6)").slideUp();
+        $("#build-menu-items div.build-menu-item:gt(3)").slideUp();
         $("#build-less-up-btn").hide();
         $("#build-more-down-btn").show();
         clickCounter = 0;

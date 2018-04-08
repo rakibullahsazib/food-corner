@@ -93,9 +93,10 @@ ul#nav-list{
 
 
 #banner #banner-text{
-    background:  linear-gradient(to top, rgba(188,133,101,0.2) 0%,rgba(201,193,144,0.3) 100%);;
+    background: rgba(58, 56, 55, 0.2);
+    background:  linear-gradient(to top, rgba(58, 56, 55, 0.2) 0%,rgba(145, 143, 139, 0.3) 100%);
     width: 100%;
-    height: 100%;
+    height: 99%;
     top: 0;
     left:0;
     position: absolute;  
@@ -108,7 +109,6 @@ ul#nav-list{
     font-weight:normal;
     margin-top: 18%;
     color: rgb(247,244,237);
-    background: rgba(19, 18, 18, 0.2);
     letter-spacing: 2px;
 }
 h2.section-title{
